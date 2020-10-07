@@ -11,7 +11,7 @@ import random
 # O(1) -- constant -- the performance doesn't change regardless of input
 # O(log n) -- logarithmic -- every time we double the input size, we only add one extra step
 # O(2^n) -- exponential
-# factorial
+# O(n!) factorial -- as the input size increases, the runtime will grow astronomically, even with relatively small inputs. The solution is exceptionally inefficient.
 # O(n log n) -- linearithmic
 
 
@@ -87,7 +87,7 @@ def insertion_sort(arr):
             for k in range(len(arr)):
                 # this makes it O(n^3)
                 # do stuff
-                arr[j + 1] = key
+                   arr[j + 1] = key
 print("-------")
 for i in [100, 1000, 10000]:
     a = [random.randint(0, j) for j in range(i)]
